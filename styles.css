@@ -12,6 +12,7 @@
 }
 /* Color Setup */
 :root{
+    --type-color:#0b061f;
     --bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #45A29E;
@@ -19,6 +20,7 @@
     --shadow-color: rgba(0,0,0, .2);
 }
 .dark-mode{
+    --type-color:#fdfdfd;
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, .9);
@@ -864,7 +866,7 @@ section{
 
 .animated-text span::before{
     content: "Computer Engineer";
-    color: #ff7f50;
+    color: var(--main-color);
     animation: words 20s infinite;
 }
 
@@ -874,7 +876,7 @@ section{
     width: calc(100% + 8px);
     height: 100%;
     background-color: var(--bg-color);
-    border-left: 2px solid #ff7f50;
+    border-left: 2px solid var(--main-color);
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
@@ -887,16 +889,16 @@ section{
 
 @keyframes words {
     0%,20%{
-        content: "Lance Ubina";
+        content: "Lance Romnil Ubina";
     }
     21%,40%{
-        content: "Computer Engineer";
+        content: "a Computer Engineer";
     }
     41%,60%{
-        content: "Web Developer";
+        content: "23 Years old";
     }
     61%,80%{
-        content: "Web Designer";
+        content: "From Philippines";
     }
     81%,100%{
         content: "Here to help";
