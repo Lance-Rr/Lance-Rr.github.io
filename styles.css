@@ -18,7 +18,8 @@
     --main-color: #45A29E;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, .2);
-}
+  }
+
 .dark-mode{
     --type-color:#fdfdfd;
     --bg-color: #0b061f;
@@ -173,7 +174,6 @@ section{
 .btn:hover{
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
 }
 
 .home .profession-container{
@@ -186,6 +186,7 @@ section{
     background: transparent;
     overflow: hidden;
     pointer-events: none;
+    
 }
 
 .home .profession-container .profession-box{
@@ -271,6 +272,8 @@ section{
     border-bottom: 384px solid var(--main-color);
     border-left: 384px solid transparent;
 }
+
+
 /*About Section*/
 
 .imgabout{
@@ -301,8 +304,30 @@ section{
     font-size: 1.6rem;
     margin: 2rem 0.2rem;
 }
+.about-content .Tech{
+    font-size: 1.6rem;
+   
+}
+
+.about-content .techstacks {
+    display:flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 3rem;
+    list-style: none;
+}
+
+
+.about-content .techstacks img{
+    border-radius: 50%;
+    object-fit: contain;
+    width: 4rem;
+    height: 4rem;
+}
+
 
 /*Project Section*/
+
 .services{
     justify-content: center;
     align-content: center;
@@ -325,7 +350,7 @@ section{
     background: var(--bg-color);
     margin: 0 40px;
     border: 1rem;
-    border: .2rem solid var(--main-color);
+    box-shadow: 0 .5rem .5rem var(--shadow-color);
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
     
@@ -343,19 +368,21 @@ section{
     font-weight: 600;
     border: .2rem solid transparent;
     transition: .5s ease;
+    opacity: .6;
+
 }
 
 .btn2:hover{
-    background: transparent;
-    color: var(--bg-m);
+    opacity: 1;
     border-color: var(--bg-color);
 }
 
-.project-list div:hover{
+.project-list .project-div:hover{
     background: var(--main-color);
     color: var(--white-color);
     transform: translateY(-10px);
 }
+
 .project-list h2{
     font-size: 30px;
     font-weight: 500;
@@ -441,12 +468,29 @@ section{
     height: 2.5rem;
     background: var(--white-color);
     border-radius: 50%;
-    
 }
+
+/* asd */
+
 .portfolio-layer a i{
     font-size: 1.5rem;
     color: #333;
 }
+.portfolio-layer button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer button i{
+    font-size: 1.5rem;
+    color: #333;
+}
+
 
 /*Educational Background*/
 
@@ -548,7 +592,6 @@ section{
  .button:hover{
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
  }
  
 .slide-container .swiper-button-next,
@@ -674,7 +717,7 @@ section{
     .home .profession-container .overlay{
         right: -15rem;
     }
-
+    
 }
 
 @media(max-width: 991px){
@@ -845,6 +888,7 @@ section{
     .slide-container .swiper-button-next, .slide-container .swiper-button-prev{
         display: none;
     }
+
 }
 
 @media (max-width: 617px){
@@ -892,16 +936,16 @@ section{
         content: "Lance Romnil Ubina";
     }
     21%,40%{
-        content: "a Computer Engineer";
+        content: "Lance Romnil Ubina";
     }
     41%,60%{
-        content: "23 Years old";
+        content: "Lance Romnil Ubina";
     }
     61%,80%{
-        content: "From Philippines";
+        content: "Lance Romnil Ubina";
     }
     81%,100%{
-        content: "Here to help";
+        content: "Lance Romnil Ubina";
     }
 }
 
@@ -913,3 +957,88 @@ section{
         width: calc(100% + 8px);
     }
 }
+
+/* try pop up */
+
+.products-preview{
+    opacity: 0;
+    transition: 0.5s;
+   visibility: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 10;
+}
+.products-preview .preview{
+    border-radius: 2rem;
+    padding:2rem;
+    text-align:center;
+    background: var(--bg-color);
+    position: relative;
+    margin:10rem;
+    width: 40rem;
+ }
+
+ .products-preview .preview h3{
+    color: var(--main-color);
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+ }
+ .products-preview .preview ul li{
+    text-align: left;
+    list-style: none;
+ }
+ .products-preview .preview ul li a{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:var(--text-color);
+    text-align: left;
+ }
+ .products-preview .preview ul li a:hover{
+    color: var(--main-color);
+ }
+.products-preview .preview button {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .5rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    
+}
+.products-preview .preview button:hover{
+    background: transparent;
+    color: var(--main-color);
+}
+ 
+ 
+ .open-Popup{
+    visibility: visible;
+    transition: 0.5 s;
+    opacity: 1;
+ }
+ 
+ #products-preview2 .preview ul li a{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 13px;
+    color:var(--text-color);
+    text-align: left;
+ }
+
+ #products-preview2 .preview ul li a:hover{
+    color: var(--main-color);
+ }
