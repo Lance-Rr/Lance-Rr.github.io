@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!--Swiper css-->
@@ -40,39 +41,38 @@
             <p>Hire Me</p>
 
             <div class="social-media">
-                <a href="https://www.facebook.com/lance.ubina/"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/lancelot0523/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.facebook.com/lance.ubina/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/lancelot0523/" target="_blank"><i class='bx bxl-instagram' ></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://www.linkedin.com/in/lance-ubi%C3%B1a-22829118a"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.linkedin.com/in/lance-ubi%C3%B1a-22829118a" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
 
-           <a class="btn" href="#">Download CV</a>
+           <a class="btn" href="LanceRomnilUbina_Resume.pdf" download="" target="_blank">Download CV</a>
         </div>
         
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
-                    <i class='bx bx-code-alt'></i>
+                    
                     <h3>Web Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
-                    <i class='bx bx-palette'></i>
+                   
                     <h3>UI/UX Designer</h3>
                 </div>
                 <div class="profession" style="--i:2;">
-                    <i class='bx bxs-paint'></i>
+                    
                     <h3>Graphic Designer</h3>
                 </div>
                 <div class="profession" style="--i:3;">
-                    <i class='bx bx-hard-hat'></i>
-                    <h3>Engineer</h3>
+                    
+                    <h3>Computer Engineer</h3>
                 </div>
 
                 <div class="circle"></div>
             </div>
             <div class="overlay"></div>
          </div>
-         
     </section>
 <!--About Section-->
 
@@ -88,7 +88,16 @@
         <p>I am Lance Romnil P. Ubina 23 years old a Computer Engineer aspiring front-end web developer with a passion for developing and creating user friendly websites. Proficient in JavaScript, CSS, and HTML. Eager to acquire new skills
             and progress as a developer by gaining experience in creating real projects. Dedicated to
             being updated with the newest innovations in web development.   </p>
-       <a class="btn" href="#">Read More</a>
+            <h3 class="Tech">Tech Stacks</h3>
+            <div class="techstacks">
+                <img src="image/about-html.svg" alt="">
+                <img src="image/about-css.svg" alt="">
+                <img src="image/about-javascript.svg" alt="">
+                <img src="image/about-react.svg" alt="">
+                <img src="image/c.jpg" alt="">
+            </div>
+       <a class="btn" href="https://careerfoundry.com/en/blog/web-development/what-is-a-tech-stack/" target="_blank">Read More</a>
+       
     </div>
 
 </section>
@@ -103,19 +112,19 @@
                     <i class='bx bx-code-alt'></i>
                     <h2>Web Designs</h2>
                     <p>Web design is a type of digital design that determines the look of a website—such as its colors, fonts, graphics and user interface.</p>
-                    <a href="#" class="btn2">Learn More</a>
+                    <a href="https://www.interaction-design.org/literature/topics/web-design#:~:text=Web%20design%20involves%20creating%20the,translate%20the%20designs%20to%20code." target="_blank" class="btn2">Learn More</a>
                 </div>
                 <div class="project-div"> 
                     <i class='bx bx-desktop'></i>
                     <h2>Web Projects</h2>
                     <p>Web Project is defined as the project which is specialized to make different types of websites that are implemented on the internet.</p>
-                    <a href="#" class="btn2">Learn More</a>
+                    <a href="https://www.justtechweb.com/web-project-tools/#:~:text=What%20is%20a%20Web%20Project%3F%20The%20term%20%E2%80%9D,of%20e-commerce%2C%20The%20launch%20of%20an%20application%2C%20etc." target="_blank" class="btn2">Learn More</a>
                 </div>
                 <div class="project-div">
                     <i class='bx bx-palette' ></i>
                     <h2>Graphic Designs</h2>
                     <p>Graphic design is the practice of composing and arranging the visual elements of a project.</p>
-                    <a href="#" class="btn2">Learn More</a>
+                    <a href="https://www.pixpa.com/blog/what-is-graphic-design"target class="btn2">Learn More</a>
                 </div>
             </div>
         </div>
@@ -133,8 +142,7 @@
             <div class="portfolio-layer">
                 <h4>Studies</h4>
                 <p>Educational Backgrounds</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-
+                <a href="#educs"><i class='bx bx-link-external'></i></a>
             </div>
 
         </div>
@@ -144,8 +152,9 @@
             <div class="portfolio-layer">
                 <h4>Thesis Project</h4>
                 <p>This is my Thesis project during College</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
+                <button type="button" onclick="openPopup2()" ><i class='bx bx-link-external'></i></button>
             </div>
+            
 
         </div>
         <div class="portfolio-box">
@@ -154,7 +163,7 @@
             <div class="portfolio-layer">
                 <h4>Certificates</h4>
                 <p>My Certificates after Graduation</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
+                <button type="button" onclick="openPopup()" ><i class='bx bx-link-external'></i></button>   
             </div>
 
         </div>
@@ -164,7 +173,7 @@
             <div class="portfolio-layer">
                 <h4>Web Projects</h4>
                 <p>These are my sample projects</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
+                <button type="button" onclick="openPopup3()" ><i class='bx bx-link-external'></i></button>
             </div>
 
         </div>
@@ -174,7 +183,7 @@
             <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>These are my Web Designs</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
+                <a href="#portfolio"><i class='bx bx-link-external'></i></a>
             </div>
 
         </div>
@@ -184,12 +193,54 @@
             <div class="portfolio-layer">
                 <h4>Graphic Designs</h4>
                 <p>Thise are my Graphic Designs</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
+                <a href="#portfolio"><i class='bx bx-link-external'></i></a>
             </div>
-
         </div>
     </div>
+    
 </Section>
+
+   
+        <div class="products-preview" id="products-preview">
+            <div class="preview"  data-target="p-1">
+                <h3>My Certificates</h3>
+                <ul>
+                    <li><a href="Certificates/Introduction to Front-End Development Cetificate.pdf"download="" target="_blank">Introduction to Front-End Development</a></li> 
+                    <li><a href="Certificates/Programming with JavaScript.pdf"download="" target="_blank">Programming with JavaScript</a></li> 
+                    <li><a href="Certificates/JavaScript 101.pdf"download="" target="_blank">JavaScript 101</a></li> 
+                    <li><a href="Certificates/CBasics Selection and Iteration.pdf"download="" target="_blank">C++ Basics Selction and Iteration</a></li> 
+                </ul>
+                <button onclick="closePopup()">Close</button>
+             </div>
+           </div>
+
+           <div class="products-preview" id="products-preview2">
+            <div class="preview"  data-target="p-1">
+                <h3>My Thesis Project</h3>
+                <ul>
+                    <li><a href="IoT-Based-Two-Way-Person-Counter-with-Data-Visualization (1).pdf"download="" target="_blank">Two-way Person Counter with Data Visualization</a></li> 
+                    
+                </ul>
+                <button onclick="closePopup2()">Close</button>
+             </div>
+           </div>
+
+           <div class="products-preview" id="products-preview3">
+            <div class="preview"  data-target="p-1">
+                <h3>Sample Web Projects</h3>
+                <ul>
+                    <li><a href="Git/Resto-Website/index.html" target="_blank">Restaurant Website</a></li> 
+                    <li><a href="Git/Shoe-Website-1/Shoe Website/index.html" target="_blank">Shoe Website Light</a></li> 
+                    <li><a href="Git/Shoe-Website-2/index.html" target="_blank">Shoe Website Dark</a></li> 
+                    <li><a href="Git/Vegetables-Website/index.html" target="_blank">Vegetable Websites</a></li> 
+                    <li><a href="Git/solanaproj-main/index.html" target="_blank">Tourism Website</a></li> 
+                </ul>
+                <button onclick="closePopup3()">Close</button>
+             </div>
+           </div>
+   
+
+
 
 <!--Testimonial -->
 <section class="educ" id="educs">
@@ -213,7 +264,7 @@
                                     <h2 class="name">Andarayan Elementary School</h2>
                                     <p class="description"><i class='bx bx-location-plus'></i>Andarayan South, Solana, Cagayan, 3503</p>
                                     <p class="description"><i class='bx bxs-phone-call' ></i>0975 446 4062</p>
-                                    <a href="https://www.facebook.com/103264andarayanES"><button class="button">View More</button></a>
+                                    <a href="https://www.facebook.com/103264andarayanES" target="_blank"><button class="button">View More</button></a>
                                     
                                 </div>
                             </div>  
@@ -230,7 +281,7 @@
                                     <h2 class="name">Anadarayan National Highschool</h2>
                                     <p class="description"><i class='bx bx-location-plus'></i>Andarayan North, Solana, Philippines, 3503</p>
                                     <p class="description"><i class='bx bx-envelope' ></i>300426@deped.gov.ph</p>
-                                    <a href="https://www.facebook.com/people/Andarayan-National-High-School/100068136173203/"><button class="button">View More</button></a>
+                                    <a href="https://www.facebook.com/people/Andarayan-National-High-School/100068136173203/" target="_blank"><button class="button">View More</button></a>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
@@ -246,7 +297,7 @@
                                     <h2 class="name">University of Saint Louis Tugegarao</h2>
                                     <p class="description"><i class='bx bx-location-plus'></i>Mabini Street, Tuguegarao City, Philippines, 3500</p>
                                     <p class="description"><i class='bx bxs-phone-call'></i>>(078) 844 1822</p>
-                                    <a href="https://www.facebook.com/OfficialUSLPhilippines"><button class="button">View More</button></a>
+                                    <a href="https://www.facebook.com/OfficialUSLPhilippines" target="_blank"><button class="button">View More</button></a>
                                     
                                 </div>
                             </div>
@@ -277,6 +328,7 @@
         <input type="submit" value="Send Message" class="btn">
      </form>   
 </section>
+
 <!--Footer Design-->
 <footer class="footer">
     <div class="footer-text">
@@ -298,7 +350,6 @@
 
        <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
 
 </body>
 </html>
