@@ -68,7 +68,7 @@ var swiper = new Swiper(".slide-content", {
 
   /*--Dark Mode Light Mode--*/
 
-  let Darkmode = document.querySelector('#darkMode-icon');
+let Darkmode = document.querySelector('#darkMode-icon');
 
 Darkmode.onclick = () => {
   Darkmode.classList.toggle('bxs-sun');
@@ -92,12 +92,38 @@ ScrollReveal({
 
   ScrollReveal().reveal('.about-img', { origin: 'left' });
   
-  
-/* ----- TYPING EFFECT ----- */
-var typingEffect = new Typed(".typedText",{
-  strings : ["a Web","Developer","Engineer"],
-  loop : true,
-  typeSpeed : 80, 
-  backSpeed : 70,
-  backDelay : 2000
-})
+// popup
+
+let popup = document.getElementById("products-preview");
+
+function openPopup(){
+popup.classList.add("open-Popup");
+}
+
+function closePopup(){
+popup.classList.remove("open-Popup");
+}
+
+// popup2
+
+let popup2 = document.getElementById("products-preview2");
+
+function openPopup2(){
+popup2.classList.add("open-Popup");
+}
+
+function closePopup2(){
+popup2.classList.remove("open-Popup");
+}
+
+// popup3
+
+let popup3 = document.getElementById("products-preview3");
+
+function openPopup3(){
+popup3.classList.add("open-Popup");
+}
+
+function closePopup3(){
+popup3.classList.remove("open-Popup");
+}
